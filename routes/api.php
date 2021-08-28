@@ -22,4 +22,14 @@ use Illuminate\Support\Facades\Route;
 // Login Routes
 
 Route::post('/login' , 'AuthController@login');
+
+
 Route::post('/register' , 'AuthController@register');
+
+
+Route::post('/forgot-password' , 'AuthController@forgot');
+
+
+Route::post('/reset-password' , 'AuthController@reset');
+
+
