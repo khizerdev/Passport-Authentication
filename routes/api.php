@@ -33,3 +33,4 @@ Route::post('/forgot-password' , 'AuthController@forgot');
 Route::post('/reset-password' , 'AuthController@reset');
 
 
+Route::get('/user' , 'UserController@user')->middleware('auth:api');
